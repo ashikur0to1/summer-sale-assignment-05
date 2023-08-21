@@ -43,7 +43,7 @@
                 </div>
 
                 <!-- Kitchenware First Card -->
-                <div class="card bg-base-100 shadow-xl" id="kitchenware-first-card">
+                <div class="card bg-base-100 shadow-xl" id="kitchenware-first-card" onclick="addToCartAndCalculation('kitchenware-first-card-title', 'cart-entry', 'kitchenware-first-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod1.png" alt=""/>
                     </figure>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <!-- Kitchenware Second Card -->
-                <div class="card bg-base-100 shadow-xl" id="kitchenware-second-card">
+                <div class="card bg-base-100 shadow-xl" id="kitchenware-second-card" onclick="addToCartAndCalculation('kitchenware-second-card-title', 'cart-entry', 'kitchenware-second-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod2.png" alt="" class="rounded-xl" />
                     </figure>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <!-- Kitchenware Third Card -->
-                <div class="card bg-base-100 shadow-xl" id="kitchenware-third-card">
+                <div class="card bg-base-100 shadow-xl" id="kitchenware-third-card" onclick="addToCartAndCalculation('kitchenware-third-card-title', 'cart-entry', 'kitchenware-third-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod3.png" alt="" class="rounded-xl" />
                     </figure>
@@ -100,7 +100,7 @@
                 </div>
 
                 <!-- Sportswear First Card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" id="sportswear-first-card" onclick="addToCartAndCalculation('sportswear-first-card-title', 'cart-entry', 'sportswear-first-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod4.png" alt=""/>
                     </figure>
@@ -112,12 +112,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>  
-                        <h2 class="card-title">Sports Back Cap</h2>
-                        <p class="text-xl font-normal text-[#11111180]">49.00 TK</p>
+                        <h2 class="card-title" id="sportswear-first-card-title">Sports Back Cap</h2>
+                        <p class="text-xl font-normal text-[#11111180]"><span id="sportswear-first-card-price">49.00</span> TK</p>
                     </div>
                 </div>
                 <!-- Sportswear Second Card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" id="sportswear-second-card" onclick="addToCartAndCalculation('sportswear-second-card-title', 'cart-entry', 'sportswear-second-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod5.png" alt="" class="rounded-xl" />
                     </figure>
@@ -129,12 +129,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>  
-                        <h2 class="card-title">Full Jersey Set</h2>
-                        <p class="text-xl font-normal text-[#11111180]">69.00 TK</p>
+                        <h2 class="card-title" id="sportswear-second-card-title">Full Jersey Set</h2>
+                        <p class="text-xl font-normal text-[#11111180]"><span id="sportswear-second-card-price">69.00</span> TK</p>
                     </div>
                 </div>
                 <!-- Sportswear Third Card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" id="sportswear-third-card" onclick="addToCartAndCalculation('sportswear-third-card-title', 'cart-entry', 'sportswear-third-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod6.png" alt="" class="rounded-xl" />
                     </figure>
@@ -146,8 +146,8 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>  
-                        <h2 class="card-title">Sports cates</h2>
-                        <p class="text-xl font-normal text-[#11111180]">159.00 TK</p>
+                        <h2 class="card-title" id="sportswear-third-card-title">Sports cates</h2>
+                        <p class="text-xl font-normal text-[#11111180]"><span id="sportswear-third-card-price">159.00</span> TK</p>
                     </div>
                 </div>
 
@@ -157,7 +157,7 @@
                 </div>
 
                 <!-- Furniture First Card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" id="furniture-first-card" onclick="addToCartAndCalculation('furniture-first-card-title', 'cart-entry', 'furniture-first-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod7.png" alt=""/>
                     </figure>
@@ -169,12 +169,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>  
-                        <h2 class="card-title">Single Relax Chair</h2>
-                        <p class="text-xl font-normal text-[#11111180]">185.00 TK</p>
+                        <h2 class="card-title" id="furniture-first-card-title">Single Relax Chair</h2>
+                        <p class="text-xl font-normal text-[#11111180]"><span id="furniture-first-card-price">185.00</span> TK</p>
                     </div>
                 </div>
                 <!-- Furniture Second Card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" id="furniture-second-card" onclick="addToCartAndCalculation('furniture-second-card-title', 'cart-entry', 'furniture-second-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod8.png" alt="" class="rounded-xl" />
                     </figure>
@@ -186,12 +186,12 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>  
-                        <h2 class="card-title">Children play</h2>
-                        <p class="text-xl font-normal text-[#11111180]">299.00 TK</p>
+                        <h2 class="card-title" id="furniture-second-card-title">Children play</h2>
+                        <p class="text-xl font-normal text-[#11111180]"><span id="furniture-second-card-price">299.00</span> TK</p>
                     </div>
                 </div>
                 <!-- Furniture Third Card -->
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl" id="furniture-third-card" onclick="addToCartAndCalculation('furniture-third-card-title', 'cart-entry', 'furniture-third-card-price', 'total-price', 'apply-btn', 'coupon-code-input-field', 'discount', 'total', 'purchase-btn', 'go-home-btn')">
                     <figure class="p-4 m-4 bg-[#1111110d] rounded-xl">
                       <img src="./images/prod9.png" alt="" class="rounded-xl" />
                     </figure>
@@ -203,8 +203,8 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>  
-                        <h2 class="card-title">Flexible Sofa</h2>
-                        <p class="text-xl font-normal text-[#11111180]">339.00 TK</p>
+                        <h2 class="card-title" id="furniture-third-card-title">Flexible Sofa</h2>
+                        <p class="text-xl font-normal text-[#11111180]"><span id="furniture-third-card-price">339.00</span> TK</p>
                     </div>
                 </div>
             </div>
@@ -215,7 +215,7 @@
                     <h2 class="text-2xl font-medium text-[#111]">Have coupon?</h2>
                     <div class="flex mt-4">
                         <input class="py-4 pl-4 border-l-2 border-y-2 border-[#11111126] rounded-l-xl" type="text" name="" id="coupon-code-input-field" placeholder="Coupon code">
-                        <button class="text-xl font-semibold px-5 py-4 bg-gray-400 text-white rounded-r-lg" id="apply-btn" disabled>Apply</button>
+                        <button class="text-xl font-semibold px-5 py-4 bg-[#11111180] text-white rounded-r-lg" id="apply-btn" disabled>Apply</button>
                     </div>
                 </div>
                 <!-- Purchase Container -->
@@ -232,14 +232,14 @@
                     <hr>
                 </div>
                 <div class="flex flex-col items-center mt-[-28px]">
-                    <button class="bg-gray-400 px-[72px] py-4 text-white text-xl font-semibold rounded-lg" disabled id="purchase-btn" onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <button class="bg-[#11111180] px-[72px] py-4 text-white text-xl font-semibold rounded-lg" disabled id="purchase-btn" onclick="my_modal_1.showModal()">Make Purchase</button>
                     <dialog id="my_modal_1" class="modal text-center">
                         <form method="dialog" class="modal-box">
                             <img class="mx-auto" src="./images/congo.png" alt="">
                             <h1 class="text-4xl font-bold">Congratulations</h1>
                             <p class="py-4 text-xl font-normal">You Purchase the product</p>
-                            <div class="">
-                                <button id="go-home-btn" class="bg-[#E527B2] px-11 py-4 text-white">Go Home</button>
+                            <div>
+                                <button id="go-home-btn" class="bg-[#E527B2] px-11 py-4 text-white rounded-lg">Go Home</button>
                             </div>
                         </form>
                     </dialog>

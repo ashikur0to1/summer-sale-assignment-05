@@ -12,7 +12,7 @@ function addToCartAndCalculation(cardTitleId, productEnlistCartAreaId, cardPrice
     const cartTotalPriceString = document.getElementById(cartTotalPriceId).innerText;
     let cartTotalPrice = parseFloat(cartTotalPriceString);
     cartTotalPrice = cartTotalPrice + cardPrice;
-    document.getElementById(cartTotalPriceId).innerText = cartTotalPrice;
+    document.getElementById(cartTotalPriceId).innerText = cartTotalPrice.toFixed(2);
     let couponApplyButton = document.getElementById(couponApplyButtonId);
     if(cartTotalPrice >= 200){
         couponApplyButton.removeAttribute("disabled");
@@ -25,9 +25,9 @@ function addToCartAndCalculation(cardTitleId, productEnlistCartAreaId, cardPrice
         if(couponCodeValue == "SELL200"){
             const cartDiscountPrice = (cartTotalPrice * 20)/100;
             const cartDiscountPriceArea = document.getElementById(cartDiscountPriceAreaId);
-            cartDiscountPriceArea.innerText = cartDiscountPrice;
+            cartDiscountPriceArea.innerText = cartDiscountPrice.toFixed(2);
             const cartTotal = document.getElementById(cartTotalId);
-            cartTotal.innerText = cartTotalPrice - cartDiscountPrice;
+            cartTotal.innerText = (cartTotalPrice - cartDiscountPrice).toFixed(2);
         }
     })
 
